@@ -1,14 +1,15 @@
 import React from 'react';
+import config from '../../../config.json';
 
 export const Ps1 = () => {
   return (
     <div>
-      <span className="text-light-yellow dark:text-dark-yellow">guest</span>
-      <span className="text-light-gray dark:text-dark-gray">@</span>
       <span className="text-light-green dark:text-dark-green">
-        term.m4tt72.com
+        {config.shell.name}
       </span>
-      <span className="text-light-gray dark:text-dark-gray">:$ ~ </span>
+      <span className="text-light-gray dark:text-dark-gray">
+        {config.shell.symbol}{' '}
+      </span>
     </div>
   );
 };

@@ -17,7 +17,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@m4tt72/matomo-tracker-react": "^0.6.2",
     "axios": "^0.27.2",
     "next": "^12.1.6",
     "react": "^18.1.0",

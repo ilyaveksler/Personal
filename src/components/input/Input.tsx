@@ -1,4 +1,3 @@
-import { useMatomo } from '@m4tt72/matomo-tracker-react';
 import React from 'react';
 import { commandExists } from '../../utils/commandExists';
 import { shell } from '../../utils/shell';
@@ -16,7 +15,6 @@ export const Input = ({
   setLastCommandIndex,
   clearHistory,
 }) => {
-  const { trackEvent } = useMatomo();
   const onSubmit = async (event: React.KeyboardEvent<HTMLInputElement>) => {
     const commands: [string] = history
       .map(({ command }) => command)
@@ -50,8 +48,6 @@ export const Input = ({
       setLastCommandIndex(0);
 
       await shell(history, command, setHistory, clearHistory, setCommand);
-
-      trackEvent({ category: 'Command Executed', action: command });
 
       containerRef.current.scrollTo(0, containerRef.current.scrollHeight);
     }

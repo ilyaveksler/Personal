@@ -1,4 +1,5 @@
 {
+  "websiteDomain": "ilyaveksler.com",
   "bioUrl": "https://raw.githubusercontent.com/m4tt72/m4tt72/master/README.md",
   "social": {
     "instagram": "m4tt72",
@@ -23,6 +24,21 @@
       "gray": "#A89984",
       "blue": "#458588",
       "red": "#CA2124"
+    }
+  },
+  "shell": {
+    "name": "crash",
+    "symbol": ">",
+    "commands": {
+      "whoami": "guest",
+      "banner": "Welcome to the crash shell! World's least useful shell.\nType 'help' to see list of available commands.\n",
+      "sudo": "Segmentation fault (core dumped)",
+      "vi": "Why use vi? Try punch cards instead",
+      "vim": "Why use vim? Etch individual bits onto your hard drive instead",
+      "emacs": "Really? Emacs? You should be using vim or vi",
+      "email": "hi@ilyaveksler.com",
+      "ls": "password.txt",
+      "cat": "Segmentation fault (core dumped)"
     }
   }
 }

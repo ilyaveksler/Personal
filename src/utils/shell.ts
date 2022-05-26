@@ -17,9 +17,7 @@ export const shell = async (
   } else if (command === '') {
     setHistory('');
   } else if (Object.keys(bin).indexOf(args[0]) === -1) {
-    setHistory(
-      `shell: command not found: ${args[0]}. Try 'help' to get started.`,
-    );
+    setHistory(`${args[0]}: command not found`);
   } else {
     const output = await bin[args[0]](args.slice(1));
     setHistory(output);
