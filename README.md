@@ -1,4 +1,7 @@
  # Terminal style website
+ 
+A highly customizable web terminal emulator designed to serve as a personal portfolio and landing page.
+You can use this repo and change everything from the theme to the output of each command by editing the config file. 
 
 ### Using npm/yarn
 
